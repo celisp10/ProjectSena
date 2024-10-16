@@ -1,0 +1,102 @@
+
+/* GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #181925;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* GLOBALES */
+
+
+/* VARIABLES */
+
+.message {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+}
+
+.g {
+    background-color: green;
+}
+
+.r {
+    background-color: red;
+}
+
+/* VARIABLES */
+
+
+.form-title {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    background-color: #282a3d;
+    padding: 20px 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    .form-title {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+
+.title {
+    font-size: 31px;
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    min-width: 350px;
+    padding: 5px 15px;
+    font-size: 25px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+}
+
+.submit {
+    background-color: #11121d;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #fff1;
+}

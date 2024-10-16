@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- STYLES -->
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        body {
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .title {
+            font-size: 45px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        #users {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 80%;
+            margin: 0 auto;
+            place-items: center;
+            gap: 20px;
+        }
+
+        .user {
+            border: 2px solid #fff;
+            padding: 10px;
+            min-width: 200px;
+        }
+
+    </style>
+
+    <!-- STYLES -->
+    
+</head>
+<body>
+    
+    <h2 class="title">All users</h2>
+
+    <section id="users">
+    </section>
+
+    <script>
+
+        // URL de la API    
+        const APIurl = "http://localhost/GA7-220501096-AA5-EV01/API/API.php"
+
+        fetch(APIurl)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.users)
+
+                const showUsers = document.getElementById("users")
+
+                data.users.forEach(user => {
+                    const container = document.createElement("article")
+                    container.classList.add("user")
+
+                    const template = `
+                        <p>ID: ${user.id}</p>
+                        <p>Name: ${user.user}</p>
+                    `
+
+                    container.innerHTML = template
+
+                    showUsers.appendChild(container)
+
+                })
+            })
+
+    </script>
+</body>
+</html>

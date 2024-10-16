@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Liquidations</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="btn o" href="getLiquidation.html">Ver liquidaciones</a>
+
+    <h2 class="title">Crear liquidacion</h2>
+
+    <div id="messages"></div>
+    
+    <form id="form">
+        <div class="product-form">
+            <select name="product" id="product">
+                <option value="">Selecciona un producto</option>
+                <option value="1">Leche de vaca</option>
+                <option value="2">Leche de búfalo</option>
+            </select>
+    
+            <input name="quantity_liters" id="quantity_liters" type="number" placeholder="Cantidad en litros" min="0">
+        </div>
+    
+        <input name="farmer" id="farmer" type="text" placeholder="Granjero">
+    
+        <input name="farm" id="farm" type="text" placeholder="Granja">
+    
+        <select name="operator" id="operator">
+            <option value="">Selecciona el operador que le corresponde el registro</option>
+            <option value="1">Esteban Celis</option>
+            <option value="3">Miguel Celis</option>
+        </select>
+    
+        <button class="btn g" type="submit">Guardar liquidación</button>
+    </form>
+    
+    
+    <script src="js/post.js"></script>
+</body>
+</html>

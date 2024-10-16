@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #191825;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* BOTONES */
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.r {
+    background-color: red;
+}
+
+.r:hover {
+    background-color: rgb(158, 1, 1);
+    text-decoration: none;
+}
+
+.g {
+    background-color: green;
+}
+
+.g:hover {
+    background-color: rgb(1, 80, 1);
+    text-decoration: none;
+}
+
+.o {
+    background-color: orangered;
+}
+
+.o:hover {
+    background-color: rgb(174, 48, 3);
+    text-decoration: none;
+}
+
+/* BOTONES */
+
+
+form {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    border-radius: 6px;
+    outline: none;
+    font-size: 25px;
+    /* background-color: rgba(60, 83, 123, 0.644); */
+    background-color: #16182e;
+    border: 2px solid;
+    padding: 5px 10px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (min-width: 800px) {
+    .product-form {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .product-form input,
+    .product-form select {
+        width: 100%;
+    }
+}
+
+.container_log-in {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.container_log-in .title {
+    font-size: 45px;
+    color: #3dc;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2b2e49;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1d1f32;
+    color: white;
+}
+    
+tr:hover {
+    background-color: #36395b;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
+
+/* LIQUIDACIONES */
+
+#liquidations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    place-items: center;
+}
+
+.liquidation {
+    padding: 20px;
+    box-shadow: 10px 10px 15px #0003;
+    border-radius: 10px;
+    background-color: #090a1a;
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* LIQUIDACIONES */
